@@ -6,4 +6,6 @@ class Product < ApplicationRecord
         with: %r{\.(gif|jpg|png)\Z}i,
         message: 'must be a URL for GIF, JPG, or PNG image.'
     }
+    has_many :line_items
+    has_many :orders, through: :line_items
 end
