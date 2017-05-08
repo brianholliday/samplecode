@@ -37,10 +37,10 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address:              "smtp.gmail.com",
     port:                 587,
-    domain:               "gflsystems.com",
+    domain:               "",
     authentication:       "plain",
-    user_name:            "brian@gflsystems.com",
-    password:             "bacon123",
+    user_name:            "",
+    password:             "",
     enable_starttls_auto: true
   }
    config.action_mailer.default_url_options = { :host => 'localhost' }
